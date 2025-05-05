@@ -2,79 +2,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Abhishek Galphade | Portfolio</title>
+    <meta charset="UTF-8">
+    <title>Abhishek Galphade - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
 </head>
-<body class="bg-gray-100 text-gray-900 font-sans leading-normal tracking-normal">
+<body class="bg-gray-50 text-gray-800">
 
-    <header class="bg-blue-900 text-white text-center p-6">
-        <h1 class="text-3xl font-bold">Abhishek Galphade</h1>
-        <p class="text-lg">Generative AI | LLM Fine-Tuning | MLOps</p>
-        <p>Pune, India | +91 7875286035 | <a href="mailto:abhishekhgalphade.com" class="underline">abhishekhgalphade.com</a></p>
-        <p><a href="https://www.linkedin.com/in/abhishek-galphade-194516172" class="underline">LinkedIn</a></p>
-    </header>
+    <!-- Sticky Navbar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <ul class="flex justify-center space-x-6 p-4 text-blue-700 font-semibold">
+            <li><a href="#summary" class="hover:underline">Summary</a></li>
+            <li><a href="#experience" class="hover:underline">Experience</a></li>
+            <li><a href="#skills" class="hover:underline">Skills</a></li>
+            <li><a href="#education" class="hover:underline">Education</a></li>
+            <li><a href="#certifications" class="hover:underline">Certifications</a></li>
+        </ul>
+    </nav>
 
-    <main class="max-w-4xl mx-auto p-4">
-        <section class="mb-8">
+    <div class="max-w-4xl mx-auto p-6 space-y-10">
+        <header class="text-center mt-6" data-aos="fade-up">
+            <h1 class="text-4xl font-bold">Abhishek Galphade</h1>
+            <p class="text-lg mt-2">Pune, India | +91 7875286035 | <a href="mailto:abhishekhgalphade.com" class="text-blue-600 underline">abhishekhgalphade.com</a></p>
+            <p><a href="https://www.linkedin.com/in/abhishek-galphade-194516172" class="text-blue-600 underline">LinkedIn Profile</a></p>
+        </header>
+
+        <section id="summary" data-aos="fade-up">
             <h2 class="text-2xl font-semibold mb-2">Professional Summary</h2>
-            <p>Analytical and results-oriented Data Analyst with 4+ years of experience in data analysis, machine learning, and AI application development. Proven expertise in building scalable AI systems, fine-tuning large language models (LLMs), and optimizing ETL pipelines using cloud infrastructure. Proficient in NLP, prompt engineering, and deploying AI models into production environments. Adept at translating business needs into actionable AI/ML solutions.</p>
+            <p>Analytical and results-oriented Data Analyst with 4+ years of experience in data analysis, machine learning, and AI application development. Proven expertise in building scalable AI systems, fine-tuning large language models (LLMs), and optimizing ETL pipelines using cloud infrastructure.</p>
         </section>
 
-        <section class="mb-8">
+        <section id="experience" data-aos="fade-up">
             <h2 class="text-2xl font-semibold mb-2">Professional Experience</h2>
-            <h3 class="font-bold">Senior Data Annotation Specialist</h3>
-            <p>Eligarf Technologies Pvt Ltd – Pune, India (Nov 2020 – Oct 2024)</p>
+            <h3 class="text-xl font-semibold">Senior Data Annotation Specialist – Eligarf Technologies Pvt Ltd</h3>
+            <p class="text-sm italic">November 2020 – October 2024</p>
             <ul class="list-disc list-inside mt-2 space-y-1">
-                <li>Improved data pipeline efficiency by 26% through ETL automation using AWS.</li>
-                <li>Built Power BI dashboards for executive-level decision-making.</li>
-                <li>Performed data analysis with Python and SQL, improving reporting accuracy by 30%.</li>
-                <li>Collaborated cross-functionally to ensure ML data readiness.</li>
-                <li>Fine-tuned LLMs (GPT, LLaMA) for NLP solutions.</li>
-                <li>Designed prompt engineering frameworks for scalable deployment.</li>
-                <li>Implemented RAG methods for enhanced contextual LLM performance.</li>
-                <li>Deployed AI/ML models to cloud using AWS services.</li>
-                <li>Integrated AI features in products, boosting automation capabilities.</li>
-                <li>Researched advancements in GenAI, vector search, and LLMOps.</li>
+                <li>Improved data pipeline efficiency by 26% using AWS.</li>
+                <li>Developed dashboards in Power BI for decision support.</li>
+                <li>Performed advanced analysis using Python and SQL.</li>
+                <li>Fine-tuned LLMs such as GPT and LLaMA for NLP solutions.</li>
+                <li>Designed scalable prompt engineering frameworks.</li>
+                <li>Applied retrieval-augmented generation methods.</li>
+                <li>Deployed AI models using AWS services.</li>
             </ul>
         </section>
 
-        <section class="mb-8">
+        <section id="skills" data-aos="fade-up">
             <h2 class="text-2xl font-semibold mb-2">Skills & Tools</h2>
-            <p><strong>Data Analysis & Visualization:</strong> Power BI, Excel, Jupyter Notebook, Matplotlib</p>
-            <p><strong>Cloud & Databases:</strong> AWS (EC2, S3, IAM, Redshift, SageMaker, DMS, Kinesis, API, SNS, SQS, DynamoDB, RDS)</p>
-            <p><strong>Programming & ML:</strong> Python, SQL, NumPy, Pandas, TensorFlow, PyTorch</p>
-            <p><strong>AI/ML Focus Areas:</strong> LLM Fine-Tuning, Prompt Engineering, RAG, MLOps, LLMOps, Transformers, NLP, Embeddings, Pinecone</p>
-            <p><strong>Frameworks/APIs:</strong> LangChain, Hugging Face, OpenAI, Vertex AI, Bedrock</p>
+            <p><strong>Data Analysis:</strong> Power BI, Excel, Jupyter</p>
+            <p><strong>Cloud Platforms:</strong> AWS EC2, S3, Redshift, SageMaker, etc.</p>
+            <p><strong>Programming:</strong> Python, SQL, NumPy, Pandas, TensorFlow, PyTorch</p>
+            <p><strong>AI/ML:</strong> LLM Fine-Tuning, Prompt Engineering, RAG, MLOps, etc.</p>
         </section>
 
-        <section class="mb-8">
+        <section id="education" data-aos="fade-up">
             <h2 class="text-2xl font-semibold mb-2">Education</h2>
-            <p><strong>Bachelor of Computer Engineering</strong></p>
-            <p>Savitribai Phule Pune University – Pune, India</p>
-            <p>Graduated: May 2020 | CGPA: 7.12 / 10</p>
-            <p>Member, University Honor Society</p>
+            <p><strong>Bachelor of Computer Engineering</strong> – Savitribai Phule Pune University (May 2020)</p>
+            <p>CGPA: 7.12 / 10</p>
         </section>
 
-        <section class="mb-8">
+        <section id="certifications" data-aos="fade-up">
             <h2 class="text-2xl font-semibold mb-2">Certifications & Achievements</h2>
-            <ul class="list-disc list-inside space-y-1">
-                <li>Oracle AI Vector Search Professional Certificate</li>
+            <ul class="list-disc list-inside">
+                <li>Oracle AI Vector Search Professional</li>
                 <li>AWS Knowledge: Architecting</li>
-                <li>AWS Cloud Quest: Cloud Practitioner</li>
-                <li>Google – Introduction to Generative AI & Large Language Models</li>
-                <li>Machine Learning Operations (MLOps)</li>
-                <li>AWS – Compute, Database, Networking, Security, and Storage</li>
-                <li>AWS Machine Learning Foundation</li>
-                <li>Performer of the Month – Recognized for AI/ML project contributions</li>
+                <li>Google – Generative AI & LLMs</li>
+                <li>MLOps, AWS Machine Learning Foundation</li>
+                <li>Performer of the Month for AI/ML project work</li>
             </ul>
         </section>
-    </main>
+    </div>
 
-    <footer class="bg-blue-900 text-white text-center p-4">
-        <p>&copy; 2025 Abhishek Galphade</p>
-    </footer>
-
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>
